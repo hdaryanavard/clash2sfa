@@ -53,7 +53,7 @@
                 "server": "local"
             },
             {
-                "rule_set": "geosite-cn",
+                "rule_set": "geosite-ir",
                 "server": "local"
             }
         ],
@@ -113,23 +113,23 @@
                 "outbound": "direct"
             },
             {
-                "rule_set": "geoip-cn",
+                "rule_set": "geoip-ir",
                 "outbound": "direct"
             }
         ],
         "auto_detect_interface": true,
         "rule_set": [
             {
-                "tag": "geoip-cn",
+                "tag": "geoip-ir",
                 "type": "remote",
                 "format": "binary",
-                "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs"
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs"
             },
             {
-                "tag": "geosite-cn",
+                "tag": "geosite-ir",
                 "type": "remote",
                 "format": "binary",
-                "url": "https://raw.githubusercontent.com/xmdhs/sing-geosite/rule-set-Loyalsoldier/geosite-cn.srs"
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"
             },
             {
                 "tag": "AdGuardSDNSFilter",

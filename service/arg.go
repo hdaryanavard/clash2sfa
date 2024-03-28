@@ -93,7 +93,7 @@ func (c *Convert) MakeConfig(cxt context.Context, arg model.ConvertArg) ([]byte,
 }
 
 var (
-	ErrJson = errors.New("错误的 json")
+	ErrJson = errors.New("Wrong json")
 )
 
 func filterTags(tags []string, include, exclude string) ([]string, error) {

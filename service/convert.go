@@ -58,7 +58,7 @@ func convert2sing(cxt context.Context, client *http.Client, config,
 
 }
 
-var ErrFormat = errors.New("错误的格式")
+var ErrFormat = errors.New("wrong format")
 
 var notNeedType = map[string]struct{}{
 	"direct": {},

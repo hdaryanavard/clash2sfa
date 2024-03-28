@@ -29,7 +29,7 @@ func NewBBolt(path string) (*BBolt, error) {
 	return &BBolt{db: db}, nil
 }
 
-var ErrNotFind = errors.New("没找到")
+var ErrNotFind = errors.New("did not find")
 
 func (b *BBolt) GetArg(cxt context.Context, blake3 string) (model.ConvertArg, error) {
 	m := model.ConvertArg{}

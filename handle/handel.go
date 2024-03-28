@@ -38,8 +38,8 @@ func (h *Handle) PutArg(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if arg.Sub == "" {
-		h.l.DebugContext(cxt, "订阅链接不得为空")
-		http.Error(w, "订阅链接不得为空", 400)
+		h.l.DebugContext(cxt, "Subscription link cannot be empty")
+		http.Error(w, "Subscription link cannot be empty", 400)
 		return
 	}
 	s, err := h.convert.PutArg(cxt, arg)
@@ -73,8 +73,8 @@ func (h *Handle) Sub(w http.ResponseWriter, r *http.Request) {
 	addTagb := false
 
 	if id == "" && sub == "" {
-		h.l.DebugContext(ctx, "id 不得为空")
-		http.Error(w, "id 不得为空", 400)
+		h.l.DebugContext(ctx, "id must not be empty")
+		http.Error(w, "id must not be empty", 400)
 		return
 	}
 	if addTag == "true" {
